@@ -1,0 +1,12 @@
+Dependencies :
+
+- json-cpp (apt-get install libjsoncpp...)
+
+How to build :
+
+./configure
+make
+
+How to test :
+
+./DebugManager
