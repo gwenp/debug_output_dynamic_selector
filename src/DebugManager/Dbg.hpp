@@ -49,8 +49,6 @@ public:
 		}
 	};
 
-	static std::string _activeCategory;
-	static std::vector<std::string> _printCategories;
 	
 	class Out {
 	public:
@@ -78,10 +76,15 @@ public:
 
 
 	};
+
 	static Out out;
+
+	static std::string _activeCategory;
+	static std::vector<std::string> _printCategories;
 };
 
 std::string Dbg::_activeCategory;
 std::vector<std::string> Dbg::_printCategories;
 
+Dbg::Out Dbg::out;
 #endif /* DEBUG_HPP */

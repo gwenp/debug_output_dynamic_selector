@@ -22,8 +22,16 @@ int main(int argc, char const *argv[])
 	//parse the content of the config file to get the information about what to display
 	Dbg::init("config/debug.conf");
 
+	Dbg::out("Init")<< "Starting point" <<std::endl;
 
-	Dbg::out("init")<< "Starting point" <<std::endl;
+	Dbg::out("HiddenMessages")<< "This message will not be displayed until the config file is not changed." <<std::endl;
+	Dbg::out("HiddenMessages")<< "This one neither." <<std::endl;
+
+	Dbg::out("Important message")<< "This program can be useful to quickly switch between different verbose modes while testing a program" <<std::endl;
+	
+	Dbg::out("Important message")<< "---------------------------" <<std::endl;
+
+	Dbg::out("Important message")<< "If you like my work, feel grateful to me, and if you meet me in person, just pay me " << 1 << " beer "<< "( or more ) to thank me =)" <<std::endl;
 
 	return 0;
 }
